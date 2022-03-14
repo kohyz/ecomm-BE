@@ -1,0 +1,17 @@
+server:
+  port: 8443
+  servlet:
+    context-path: /ecommerce
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+      session:
+        store-tyoe: jdbc
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomm
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
